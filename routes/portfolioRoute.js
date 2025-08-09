@@ -1,11 +1,9 @@
 const express = require('express');
-const sendEmailController = require('../controllers/portfolioController');  // ✅ FIXED
+const sendEmailController = require('../controllers/portfolioController');
 
-// router object
 const router = express.Router();
 
-// routes
-router.post('/sendEmail', sendEmailController);  // ✅ CORRECT USAGE
+// POST /api/v1/portfolio/sendEmail
+router.post('/sendEmail', sendEmailController);
 
-// export
 module.exports = router;
